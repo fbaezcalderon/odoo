@@ -23,7 +23,7 @@ class DataBaseConnector:
     
     def __init__(self, source=None,use_sid=None):
         conf = configparser.ConfigParser()                   
-        conf.read('./DataBaseConnector/config.ini')
+        conf.read('config.ini')
         self.use_sid=False
         
         self.host=conf[source]['host']
